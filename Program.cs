@@ -108,7 +108,7 @@ void PrintArray(int[,] array)
 
 void SumLine(int[,] array)
 {
-    int index = 0;
+    int indexLine = 0;
     int minsum = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -124,9 +124,9 @@ void SumLine(int[,] array)
         else if (sum<minsum)
         {
             minsum=sum;
-            index = i;
+            indexLine = i;
         }
     }
-    Console.WriteLine($"Строка с наименьшей суммой элементов -> {index+1} ");
+    Console.WriteLine($"Строка с наименьшей суммой элементов -> {indexLine+1} ");
 }
 
